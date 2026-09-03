@@ -1,3 +1,4 @@
+/home/fengyue/workspace/pans/build/CMakeFiles/test.dir
 /home/fengyue/workspace/pans/build/CMakeFiles/edit_cache.dir
 /home/fengyue/workspace/pans/build/CMakeFiles/rebuild_cache.dir
 /home/fengyue/workspace/pans/build/CMakeFiles/list_install_components.dir
@@ -5,9 +6,18 @@
 /home/fengyue/workspace/pans/build/CMakeFiles/install/local.dir
 /home/fengyue/workspace/pans/build/CMakeFiles/install/strip.dir
 /home/fengyue/workspace/pans/build/pans/CMakeFiles/pans.dir
+/home/fengyue/workspace/pans/build/pans/CMakeFiles/test.dir
 /home/fengyue/workspace/pans/build/pans/CMakeFiles/edit_cache.dir
 /home/fengyue/workspace/pans/build/pans/CMakeFiles/rebuild_cache.dir
 /home/fengyue/workspace/pans/build/pans/CMakeFiles/list_install_components.dir
 /home/fengyue/workspace/pans/build/pans/CMakeFiles/install.dir
 /home/fengyue/workspace/pans/build/pans/CMakeFiles/install/local.dir
 /home/fengyue/workspace/pans/build/pans/CMakeFiles/install/strip.dir
+/home/fengyue/workspace/pans/build/tests/CMakeFiles/test_lock.dir
+/home/fengyue/workspace/pans/build/tests/CMakeFiles/test.dir
+/home/fengyue/workspace/pans/build/tests/CMakeFiles/edit_cache.dir
+/home/fengyue/workspace/pans/build/tests/CMakeFiles/rebuild_cache.dir
+/home/fengyue/workspace/pans/build/tests/CMakeFiles/list_install_components.dir
+/home/fengyue/workspace/pans/build/tests/CMakeFiles/install.dir
+/home/fengyue/workspace/pans/build/tests/CMakeFiles/install/local.dir
+/home/fengyue/workspace/pans/build/tests/CMakeFiles/install/strip.dir

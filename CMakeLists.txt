@@ -8,11 +8,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS ON)
 
 project(pans VERSION 0.1.0 LANGUAGES CXX C)
+
+# Export the exact compiler flags and include paths for clangd and other tools.
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 
 option(PANS_BUILD_EXAMPLES "Build examples" ON)
-option(PANS_BUILD_TESTS    "Build tests"    OFF)
+option(PANS_BUILD_TESTS    "Build tests"    ON)
 option(PANS_BUILD_TOOLS    "Build tools"    OFF)
 
 if(NOT CMAKE_CONFIGURATION_TYPES AND NOT CMAKE_BUILD_TYPE)

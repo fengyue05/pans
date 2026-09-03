@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/fengyue/workspace/pans/build/pans",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/include -I/home/fengyue/workspace/pans/pans/src -O3 -DNDEBUG -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/pans.cpp.o -c /home/fengyue/workspace/pans/pans/src/pans.cpp",
+  "file": "/home/fengyue/workspace/pans/pans/src/pans.cpp",
+  "output": "pans/CMakeFiles/pans.dir/src/pans.cpp.o"
+},
+{
+  "directory": "/home/fengyue/workspace/pans/build/tests",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/include -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/test_lock.dir/test_lock.cpp.o -c /home/fengyue/workspace/pans/tests/test_lock.cpp",
+  "file": "/home/fengyue/workspace/pans/tests/test_lock.cpp",
+  "output": "tests/CMakeFiles/test_lock.dir/test_lock.cpp.o"
+}
+]

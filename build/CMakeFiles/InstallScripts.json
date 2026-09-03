@@ -2,7 +2,8 @@
 	"InstallScripts" : 
 	[
 		"/home/fengyue/workspace/pans/build/cmake_install.cmake",
-		"/home/fengyue/workspace/pans/build/pans/cmake_install.cmake"
+		"/home/fengyue/workspace/pans/build/pans/cmake_install.cmake",
+		"/home/fengyue/workspace/pans/build/tests/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

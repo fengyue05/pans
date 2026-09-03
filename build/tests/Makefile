@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fengyue/workspace/pans/build/CMakeFiles /home/fengyue/workspace/pans/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/fengyue/workspace/pans/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fengyue/workspace/pans/build/CMakeFiles /home/fengyue/workspace/pans/build/tests//CMakeFiles/progress.marks
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fengyue/workspace/pans/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,45 +158,57 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /home/fengyue/workspace/pans/build/CMakeFiles/VerifyGlobs.cmake
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fengyue/workspace/pans/build && $(CMAKE_COMMAND) -P /home/fengyue/workspace/pans/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/fengyue/workspace/pans/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named pans
+# Convenience name for target.
+tests/CMakeFiles/test_lock.dir/rule:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_lock.dir/rule
+.PHONY : tests/CMakeFiles/test_lock.dir/rule
 
-# Build rule for target.
-pans: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pans
-.PHONY : pans
-
-# fast build rule for target.
-pans/fast:
-	$(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/build
-.PHONY : pans/fast
-
-#=============================================================================
-# Target rules for targets named test_lock
-
-# Build rule for target.
-test_lock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_lock
+# Convenience name for target.
+test_lock: tests/CMakeFiles/test_lock.dir/rule
 .PHONY : test_lock
 
 # fast build rule for target.
 test_lock/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_lock.dir/build.make tests/CMakeFiles/test_lock.dir/build
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_lock.dir/build.make tests/CMakeFiles/test_lock.dir/build
 .PHONY : test_lock/fast
+
+test_lock.o: test_lock.cpp.o
+.PHONY : test_lock.o
+
+# target to build an object file
+test_lock.cpp.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_lock.dir/build.make tests/CMakeFiles/test_lock.dir/test_lock.cpp.o
+.PHONY : test_lock.cpp.o
+
+test_lock.i: test_lock.cpp.i
+.PHONY : test_lock.i
+
+# target to preprocess a source file
+test_lock.cpp.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_lock.dir/build.make tests/CMakeFiles/test_lock.dir/test_lock.cpp.i
+.PHONY : test_lock.cpp.i
+
+test_lock.s: test_lock.cpp.s
+.PHONY : test_lock.s
+
+# target to generate assembly for a file
+test_lock.cpp.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_lock.dir/build.make tests/CMakeFiles/test_lock.dir/test_lock.cpp.s
+.PHONY : test_lock.cpp.s
 
 # Help Target
 help:
@@ -211,8 +223,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... pans"
 	@echo "... test_lock"
+	@echo "... test_lock.o"
+	@echo "... test_lock.i"
+	@echo "... test_lock.s"
 .PHONY : help
 
 
@@ -224,7 +238,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/fengyue/workspace/pans/build/CMakeFiles/VerifyGlobs.cmake
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fengyue/workspace/pans/build && $(CMAKE_COMMAND) -P /home/fengyue/workspace/pans/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/fengyue/workspace/pans/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

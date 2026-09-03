@@ -5,21 +5,21 @@
 #include <iostream>
 #include <cstdint>
 
-#define PANS_ASSERT(x) \   
-    if (!(x)) [[unlikely]] { \
+#define PANS_ASSERT(x)\
+    if (!(x)) [[unlikely]] {\
         std::cerr << __FILE__ << ":" << __LINE__ << " ASSERT FAILED " << #x << "\nStacktrace: to do\n"; \
         assert(x); \
     } 
 
-#define PANS_ASSERT2(x, w) \
-    if (!(x)) [[unlikely]] \
-    { \
+#define PANS_ASSERT2(x, w)\
+    if (!(x)) [[unlikely]]\
+    {\
         std::cerr << __FILE__ << ":" << " Assert " << #x << " failed. [" << w << "].\nStacktrace: to do\n"; \
         assert(x); \
     }
 
 #define ASSERT_RETVAL(x, val) \
-    do { \  
+    do { \
         if (x) [[likely]] break; \
         PANS_ASSERT(x); \
         return val; \
