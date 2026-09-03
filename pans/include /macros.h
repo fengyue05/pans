@@ -25,7 +25,7 @@
         return val; \
     } while(0)
 
-#define ASSERT_RETVAL(x, val, info) \
+#define ASSERT_RETVAL2(x, val, info) \
     do { \
         if (x) [[likely]] break; \
         PANS_ASSERT2(x, info); \
