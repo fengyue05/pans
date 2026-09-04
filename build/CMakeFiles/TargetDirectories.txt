@@ -14,6 +14,7 @@
 /home/fengyue/workspace/pans/build/pans/CMakeFiles/install/local.dir
 /home/fengyue/workspace/pans/build/pans/CMakeFiles/install/strip.dir
 /home/fengyue/workspace/pans/build/tests/CMakeFiles/test_lock.dir
+/home/fengyue/workspace/pans/build/tests/CMakeFiles/test_mutex.dir
 /home/fengyue/workspace/pans/build/tests/CMakeFiles/test.dir
 /home/fengyue/workspace/pans/build/tests/CMakeFiles/edit_cache.dir
 /home/fengyue/workspace/pans/build/tests/CMakeFiles/rebuild_cache.dir

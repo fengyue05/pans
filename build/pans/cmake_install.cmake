@@ -47,7 +47,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pans" TYPE FILE FILES "/home/fengyue/workspace/pans/pans/include/pans/macros.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pans" TYPE FILE FILES
+    "/home/fengyue/workspace/pans/pans/include/pans/macros.h"
+    "/home/fengyue/workspace/pans/pans/include/pans/mutex.h"
+    )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

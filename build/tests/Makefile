@@ -186,6 +186,20 @@ test_lock/fast:
 	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_lock.dir/build.make tests/CMakeFiles/test_lock.dir/build
 .PHONY : test_lock/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_mutex.dir/rule:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_mutex.dir/rule
+.PHONY : tests/CMakeFiles/test_mutex.dir/rule
+
+# Convenience name for target.
+test_mutex: tests/CMakeFiles/test_mutex.dir/rule
+.PHONY : test_mutex
+
+# fast build rule for target.
+test_mutex/fast:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mutex.dir/build.make tests/CMakeFiles/test_mutex.dir/build
+.PHONY : test_mutex/fast
+
 test_lock.o: test_lock.cpp.o
 .PHONY : test_lock.o
 
@@ -210,6 +224,30 @@ test_lock.cpp.s:
 	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_lock.dir/build.make tests/CMakeFiles/test_lock.dir/test_lock.cpp.s
 .PHONY : test_lock.cpp.s
 
+test_mutex.o: test_mutex.cpp.o
+.PHONY : test_mutex.o
+
+# target to build an object file
+test_mutex.cpp.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mutex.dir/build.make tests/CMakeFiles/test_mutex.dir/test_mutex.cpp.o
+.PHONY : test_mutex.cpp.o
+
+test_mutex.i: test_mutex.cpp.i
+.PHONY : test_mutex.i
+
+# target to preprocess a source file
+test_mutex.cpp.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mutex.dir/build.make tests/CMakeFiles/test_mutex.dir/test_mutex.cpp.i
+.PHONY : test_mutex.cpp.i
+
+test_mutex.s: test_mutex.cpp.s
+.PHONY : test_mutex.s
+
+# target to generate assembly for a file
+test_mutex.cpp.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mutex.dir/build.make tests/CMakeFiles/test_mutex.dir/test_mutex.cpp.s
+.PHONY : test_mutex.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -224,9 +262,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... test_lock"
+	@echo "... test_mutex"
 	@echo "... test_lock.o"
 	@echo "... test_lock.i"
 	@echo "... test_lock.s"
+	@echo "... test_mutex.o"
+	@echo "... test_mutex.i"
+	@echo "... test_mutex.s"
 .PHONY : help
 
 

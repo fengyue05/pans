@@ -14,6 +14,7 @@ endif()
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/fengyue/workspace/pans/tests/*.cpp")
 set(OLD_GLOB
   "/home/fengyue/workspace/pans/tests/test_lock.cpp"
+  "/home/fengyue/workspace/pans/tests/test_mutex.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -61,6 +62,7 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/fengyue/workspace/pans/pans/*.h")
 set(OLD_GLOB
   "/home/fengyue/workspace/pans/pans/include/pans/macros.h"
+  "/home/fengyue/workspace/pans/pans/include/pans/mutex.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

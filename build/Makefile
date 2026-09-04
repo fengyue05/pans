@@ -198,6 +198,19 @@ test_lock/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_lock.dir/build.make tests/CMakeFiles/test_lock.dir/build
 .PHONY : test_lock/fast
 
+#=============================================================================
+# Target rules for targets named test_mutex
+
+# Build rule for target.
+test_mutex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_mutex
+.PHONY : test_mutex
+
+# fast build rule for target.
+test_mutex/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mutex.dir/build.make tests/CMakeFiles/test_mutex.dir/build
+.PHONY : test_mutex/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,6 +226,7 @@ help:
 	@echo "... test"
 	@echo "... pans"
 	@echo "... test_lock"
+	@echo "... test_mutex"
 .PHONY : help
 
 
