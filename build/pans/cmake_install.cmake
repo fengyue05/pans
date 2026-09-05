@@ -48,8 +48,12 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pans" TYPE FILE FILES
+    "/home/fengyue/workspace/pans/pans/include/pans/Logger/Log_level.h"
+    "/home/fengyue/workspace/pans/pans/include/pans/export.h"
     "/home/fengyue/workspace/pans/pans/include/pans/macros.h"
     "/home/fengyue/workspace/pans/pans/include/pans/mutex.h"
+    "/home/fengyue/workspace/pans/pans/src/buffer.h"
+    "/home/fengyue/workspace/pans/pans/src/buffer_config.h"
     )
 endif()
 

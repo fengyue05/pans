@@ -186,29 +186,29 @@ pans/fast:
 	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/build
 .PHONY : pans/fast
 
-src/pans.o: src/pans.cpp.o
-.PHONY : src/pans.o
+src/Logger.o: src/Logger.cc.o
+.PHONY : src/Logger.o
 
 # target to build an object file
-src/pans.cpp.o:
-	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/pans.cpp.o
-.PHONY : src/pans.cpp.o
+src/Logger.cc.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger.cc.o
+.PHONY : src/Logger.cc.o
 
-src/pans.i: src/pans.cpp.i
-.PHONY : src/pans.i
+src/Logger.i: src/Logger.cc.i
+.PHONY : src/Logger.i
 
 # target to preprocess a source file
-src/pans.cpp.i:
-	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/pans.cpp.i
-.PHONY : src/pans.cpp.i
+src/Logger.cc.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger.cc.i
+.PHONY : src/Logger.cc.i
 
-src/pans.s: src/pans.cpp.s
-.PHONY : src/pans.s
+src/Logger.s: src/Logger.cc.s
+.PHONY : src/Logger.s
 
 # target to generate assembly for a file
-src/pans.cpp.s:
-	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/pans.cpp.s
-.PHONY : src/pans.cpp.s
+src/Logger.cc.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger.cc.s
+.PHONY : src/Logger.cc.s
 
 # Help Target
 help:
@@ -224,9 +224,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... pans"
-	@echo "... src/pans.o"
-	@echo "... src/pans.i"
-	@echo "... src/pans.s"
+	@echo "... src/Logger.o"
+	@echo "... src/Logger.i"
+	@echo "... src/Logger.s"
 .PHONY : help
 
 

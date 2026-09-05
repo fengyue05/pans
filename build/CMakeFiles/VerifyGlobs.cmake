@@ -42,6 +42,7 @@ endif()
 # PANS_SOURCES at pans/CMakeLists.txt:1 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/fengyue/workspace/pans/pans/*.cc")
 set(OLD_GLOB
+  "/home/fengyue/workspace/pans/pans/src/Logger.cc"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -51,7 +52,6 @@ endif()
 # PANS_SOURCES at pans/CMakeLists.txt:1 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/fengyue/workspace/pans/pans/*.cpp")
 set(OLD_GLOB
-  "/home/fengyue/workspace/pans/pans/src/pans.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -61,8 +61,12 @@ endif()
 # PANS_HEADERS at pans/CMakeLists.txt:2 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/fengyue/workspace/pans/pans/*.h")
 set(OLD_GLOB
+  "/home/fengyue/workspace/pans/pans/include/pans/Logger/Log_level.h"
+  "/home/fengyue/workspace/pans/pans/include/pans/export.h"
   "/home/fengyue/workspace/pans/pans/include/pans/macros.h"
   "/home/fengyue/workspace/pans/pans/include/pans/mutex.h"
+  "/home/fengyue/workspace/pans/pans/src/buffer.h"
+  "/home/fengyue/workspace/pans/pans/src/buffer_config.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

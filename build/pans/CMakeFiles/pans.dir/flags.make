@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/fengyue/workspace/pans/pans/include -I/home/fengyue/workspace/pans/pans/src
+CXX_INCLUDES = -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20 -Werror
 

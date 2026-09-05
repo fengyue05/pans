@@ -1,2 +1,2 @@
-/usr/bin/ar qc libpans.a CMakeFiles/pans.dir/src/pans.cpp.o
+/usr/bin/ar qc libpans.a CMakeFiles/pans.dir/src/Logger.cc.o
 /usr/bin/ranlib libpans.a

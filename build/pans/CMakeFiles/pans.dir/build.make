@@ -72,28 +72,28 @@ include pans/CMakeFiles/pans.dir/flags.make
 pans/CMakeFiles/pans.dir/codegen:
 .PHONY : pans/CMakeFiles/pans.dir/codegen
 
-pans/CMakeFiles/pans.dir/src/pans.cpp.o: pans/CMakeFiles/pans.dir/flags.make
-pans/CMakeFiles/pans.dir/src/pans.cpp.o: /home/fengyue/workspace/pans/pans/src/pans.cpp
-pans/CMakeFiles/pans.dir/src/pans.cpp.o: pans/CMakeFiles/pans.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fengyue/workspace/pans/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object pans/CMakeFiles/pans.dir/src/pans.cpp.o"
-	cd /home/fengyue/workspace/pans/build/pans && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pans/CMakeFiles/pans.dir/src/pans.cpp.o -MF CMakeFiles/pans.dir/src/pans.cpp.o.d -o CMakeFiles/pans.dir/src/pans.cpp.o -c /home/fengyue/workspace/pans/pans/src/pans.cpp
+pans/CMakeFiles/pans.dir/src/Logger.cc.o: pans/CMakeFiles/pans.dir/flags.make
+pans/CMakeFiles/pans.dir/src/Logger.cc.o: /home/fengyue/workspace/pans/pans/src/Logger.cc
+pans/CMakeFiles/pans.dir/src/Logger.cc.o: pans/CMakeFiles/pans.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fengyue/workspace/pans/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object pans/CMakeFiles/pans.dir/src/Logger.cc.o"
+	cd /home/fengyue/workspace/pans/build/pans && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT pans/CMakeFiles/pans.dir/src/Logger.cc.o -MF CMakeFiles/pans.dir/src/Logger.cc.o.d -o CMakeFiles/pans.dir/src/Logger.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger.cc
 
-pans/CMakeFiles/pans.dir/src/pans.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pans.dir/src/pans.cpp.i"
-	cd /home/fengyue/workspace/pans/build/pans && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fengyue/workspace/pans/pans/src/pans.cpp > CMakeFiles/pans.dir/src/pans.cpp.i
+pans/CMakeFiles/pans.dir/src/Logger.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pans.dir/src/Logger.cc.i"
+	cd /home/fengyue/workspace/pans/build/pans && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fengyue/workspace/pans/pans/src/Logger.cc > CMakeFiles/pans.dir/src/Logger.cc.i
 
-pans/CMakeFiles/pans.dir/src/pans.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pans.dir/src/pans.cpp.s"
-	cd /home/fengyue/workspace/pans/build/pans && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fengyue/workspace/pans/pans/src/pans.cpp -o CMakeFiles/pans.dir/src/pans.cpp.s
+pans/CMakeFiles/pans.dir/src/Logger.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pans.dir/src/Logger.cc.s"
+	cd /home/fengyue/workspace/pans/build/pans && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fengyue/workspace/pans/pans/src/Logger.cc -o CMakeFiles/pans.dir/src/Logger.cc.s
 
 # Object files for target pans
 pans_OBJECTS = \
-"CMakeFiles/pans.dir/src/pans.cpp.o"
+"CMakeFiles/pans.dir/src/Logger.cc.o"
 
 # External object files for target pans
 pans_EXTERNAL_OBJECTS =
 
-pans/libpans.a: pans/CMakeFiles/pans.dir/src/pans.cpp.o
+pans/libpans.a: pans/CMakeFiles/pans.dir/src/Logger.cc.o
 pans/libpans.a: pans/CMakeFiles/pans.dir/build.make
 pans/libpans.a: pans/CMakeFiles/pans.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/fengyue/workspace/pans/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libpans.a"
