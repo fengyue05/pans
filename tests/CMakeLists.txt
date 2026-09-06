@@ -37,5 +37,5 @@ foreach(TEST_SOURCE IN LISTS PANS_TEST_SOURCES)
     add_test(NAME "${TEST_NAME}" COMMAND "${TEST_NAME}")
 endforeach()
 
-# add_subdirectory(inner_tests)
+add_subdirectory(inner_tests)
 

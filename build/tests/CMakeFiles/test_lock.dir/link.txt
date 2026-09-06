@@ -1,1 +1,1 @@
-/usr/bin/g++ -O3 -DNDEBUG CMakeFiles/test_lock.dir/test_lock.cpp.o -o /home/fengyue/workspace/pans/bin/tests/test_lock  ../pans/libpans.a
+/usr/bin/g++ -g CMakeFiles/test_lock.dir/test_lock.cpp.o -o /home/fengyue/workspace/pans/bin/tests/test_lock  ../pans/libpans.a

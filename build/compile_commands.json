@@ -1,20 +1,26 @@
 [
 {
   "directory": "/home/fengyue/workspace/pans/build/pans",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -O3 -DNDEBUG -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger.cc",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger.cc",
   "file": "/home/fengyue/workspace/pans/pans/src/Logger.cc",
   "output": "pans/CMakeFiles/pans.dir/src/Logger.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/tests",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/include -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/test_lock.dir/test_lock.cpp.o -c /home/fengyue/workspace/pans/tests/test_lock.cpp",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -o CMakeFiles/test_lock.dir/test_lock.cpp.o -c /home/fengyue/workspace/pans/tests/test_lock.cpp",
   "file": "/home/fengyue/workspace/pans/tests/test_lock.cpp",
   "output": "tests/CMakeFiles/test_lock.dir/test_lock.cpp.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/tests",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/include -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/test_mutex.dir/test_mutex.cpp.o -c /home/fengyue/workspace/pans/tests/test_mutex.cpp",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -o CMakeFiles/test_mutex.dir/test_mutex.cpp.o -c /home/fengyue/workspace/pans/tests/test_mutex.cpp",
   "file": "/home/fengyue/workspace/pans/tests/test_mutex.cpp",
   "output": "tests/CMakeFiles/test_mutex.dir/test_mutex.cpp.o"
+},
+{
+  "directory": "/home/fengyue/workspace/pans/build/tests/inner_tests",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -o CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o -c /home/fengyue/workspace/pans/tests/inner_tests/test_log_buffer.cpp",
+  "file": "/home/fengyue/workspace/pans/tests/inner_tests/test_log_buffer.cpp",
+  "output": "tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o"
 }
 ]

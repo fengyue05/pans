@@ -65,7 +65,7 @@ public:
 private:
     std::array<char, INLINE_CAPACITY> inline_{};
     std::vector<char> overflow_;
-    std::size_t size_;
+    std::size_t size_ = 0;
 };
 
 // 继承std::streambuf是为了能够能够继续使用流式输入接口，兼容ostream生态

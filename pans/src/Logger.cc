@@ -22,6 +22,7 @@ std::string_view LogLevel::ToString(Level level) noexcept
     return "UNKNOWN";
 }
 
+// 把一个字符串形式的日志级别，转换成 LogLevel::Level 枚举值
 LogLevel::Level LogLevel::FromString(std::string_view value) noexcept
 {
     std::array<char, 6> normalized{};
