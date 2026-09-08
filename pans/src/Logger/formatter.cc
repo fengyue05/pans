@@ -258,7 +258,7 @@ template <typename Item>
     return FORMAT_ITEM_FACTORIES;
 }
 
-// 
+ 
 [[nodiscard]] std::unique_ptr<Formatter::FormatItem> CreateFormatItem(char directive, std::string_view format)
 {
     const auto& factories = GetFormatItemFactories();
