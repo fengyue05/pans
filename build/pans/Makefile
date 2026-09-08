@@ -186,29 +186,77 @@ pans/fast:
 	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/build
 .PHONY : pans/fast
 
-src/Logger.o: src/Logger.cc.o
-.PHONY : src/Logger.o
+src/Logger/Logger.o: src/Logger/Logger.cc.o
+.PHONY : src/Logger/Logger.o
 
 # target to build an object file
-src/Logger.cc.o:
-	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger.cc.o
-.PHONY : src/Logger.cc.o
+src/Logger/Logger.cc.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/Logger.cc.o
+.PHONY : src/Logger/Logger.cc.o
 
-src/Logger.i: src/Logger.cc.i
-.PHONY : src/Logger.i
+src/Logger/Logger.i: src/Logger/Logger.cc.i
+.PHONY : src/Logger/Logger.i
 
 # target to preprocess a source file
-src/Logger.cc.i:
-	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger.cc.i
-.PHONY : src/Logger.cc.i
+src/Logger/Logger.cc.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/Logger.cc.i
+.PHONY : src/Logger/Logger.cc.i
 
-src/Logger.s: src/Logger.cc.s
-.PHONY : src/Logger.s
+src/Logger/Logger.s: src/Logger/Logger.cc.s
+.PHONY : src/Logger/Logger.s
 
 # target to generate assembly for a file
-src/Logger.cc.s:
-	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger.cc.s
-.PHONY : src/Logger.cc.s
+src/Logger/Logger.cc.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/Logger.cc.s
+.PHONY : src/Logger/Logger.cc.s
+
+src/Logger/apender.o: src/Logger/apender.cc.o
+.PHONY : src/Logger/apender.o
+
+# target to build an object file
+src/Logger/apender.cc.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/apender.cc.o
+.PHONY : src/Logger/apender.cc.o
+
+src/Logger/apender.i: src/Logger/apender.cc.i
+.PHONY : src/Logger/apender.i
+
+# target to preprocess a source file
+src/Logger/apender.cc.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/apender.cc.i
+.PHONY : src/Logger/apender.cc.i
+
+src/Logger/apender.s: src/Logger/apender.cc.s
+.PHONY : src/Logger/apender.s
+
+# target to generate assembly for a file
+src/Logger/apender.cc.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/apender.cc.s
+.PHONY : src/Logger/apender.cc.s
+
+src/Logger/formatter.o: src/Logger/formatter.cc.o
+.PHONY : src/Logger/formatter.o
+
+# target to build an object file
+src/Logger/formatter.cc.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/formatter.cc.o
+.PHONY : src/Logger/formatter.cc.o
+
+src/Logger/formatter.i: src/Logger/formatter.cc.i
+.PHONY : src/Logger/formatter.i
+
+# target to preprocess a source file
+src/Logger/formatter.cc.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/formatter.cc.i
+.PHONY : src/Logger/formatter.cc.i
+
+src/Logger/formatter.s: src/Logger/formatter.cc.s
+.PHONY : src/Logger/formatter.s
+
+# target to generate assembly for a file
+src/Logger/formatter.cc.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/formatter.cc.s
+.PHONY : src/Logger/formatter.cc.s
 
 # Help Target
 help:
@@ -224,9 +272,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... pans"
-	@echo "... src/Logger.o"
-	@echo "... src/Logger.i"
-	@echo "... src/Logger.s"
+	@echo "... src/Logger/Logger.o"
+	@echo "... src/Logger/Logger.i"
+	@echo "... src/Logger/Logger.s"
+	@echo "... src/Logger/apender.o"
+	@echo "... src/Logger/apender.i"
+	@echo "... src/Logger/apender.s"
+	@echo "... src/Logger/formatter.o"
+	@echo "... src/Logger/formatter.i"
+	@echo "... src/Logger/formatter.s"
 .PHONY : help
 
 

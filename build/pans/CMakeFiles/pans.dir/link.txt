@@ -1,2 +1,2 @@
-/usr/bin/ar qc libpans.a CMakeFiles/pans.dir/src/Logger.cc.o
+/usr/bin/ar qc libpans.a CMakeFiles/pans.dir/src/Logger/Logger.cc.o CMakeFiles/pans.dir/src/Logger/apender.cc.o CMakeFiles/pans.dir/src/Logger/formatter.cc.o
 /usr/bin/ranlib libpans.a

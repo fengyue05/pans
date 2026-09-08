@@ -42,7 +42,9 @@ endif()
 # PANS_SOURCES at pans/CMakeLists.txt:1 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/fengyue/workspace/pans/pans/*.cc")
 set(OLD_GLOB
-  "/home/fengyue/workspace/pans/pans/src/Logger.cc"
+  "/home/fengyue/workspace/pans/pans/src/Logger/Logger.cc"
+  "/home/fengyue/workspace/pans/pans/src/Logger/apender.cc"
+  "/home/fengyue/workspace/pans/pans/src/Logger/formatter.cc"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -62,11 +64,15 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/fengyue/workspace/pans/pans/*.h")
 set(OLD_GLOB
   "/home/fengyue/workspace/pans/pans/include/pans/Logger/Log_level.h"
+  "/home/fengyue/workspace/pans/pans/include/pans/Logger/appender.h"
   "/home/fengyue/workspace/pans/pans/include/pans/export.h"
   "/home/fengyue/workspace/pans/pans/include/pans/macros.h"
   "/home/fengyue/workspace/pans/pans/include/pans/mutex.h"
-  "/home/fengyue/workspace/pans/pans/src/buffer.h"
-  "/home/fengyue/workspace/pans/pans/src/buffer_config.h"
+  "/home/fengyue/workspace/pans/pans/src/Logger/appender_impl.h"
+  "/home/fengyue/workspace/pans/pans/src/Logger/buffer.h"
+  "/home/fengyue/workspace/pans/pans/src/Logger/buffer_config.h"
+  "/home/fengyue/workspace/pans/pans/src/Logger/formatter.h"
+  "/home/fengyue/workspace/pans/pans/src/Logger/log_record.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

@@ -1,9 +1,21 @@
 [
 {
   "directory": "/home/fengyue/workspace/pans/build/pans",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger.cc",
-  "file": "/home/fengyue/workspace/pans/pans/src/Logger.cc",
-  "output": "pans/CMakeFiles/pans.dir/src/Logger.cc.o"
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger/Logger.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/Logger.cc",
+  "file": "/home/fengyue/workspace/pans/pans/src/Logger/Logger.cc",
+  "output": "pans/CMakeFiles/pans.dir/src/Logger/Logger.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/pans/build/pans",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger/apender.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/apender.cc",
+  "file": "/home/fengyue/workspace/pans/pans/src/Logger/apender.cc",
+  "output": "pans/CMakeFiles/pans.dir/src/Logger/apender.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/pans/build/pans",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger/formatter.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/formatter.cc",
+  "file": "/home/fengyue/workspace/pans/pans/src/Logger/formatter.cc",
+  "output": "pans/CMakeFiles/pans.dir/src/Logger/formatter.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/tests",

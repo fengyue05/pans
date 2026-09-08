@@ -1,6 +1,6 @@
 #include <pans/macros.h>
-#include "../../pans/src/buffer.h"
-#include "../../pans/src/buffer_config.h"
+#include "../../pans/src/Logger/buffer.h"
+#include "../../pans/src/Logger/buffer_config.h"
 
 #include <atomic>
 #include <chrono>
