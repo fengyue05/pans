@@ -38,7 +38,7 @@ private:
     std::string pattern_;
     std::vector<std::unique_ptr<FormatItem>> items_;
 };
-
+ 
 }
 
 #endif
