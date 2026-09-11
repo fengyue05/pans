@@ -42,9 +42,14 @@ endif()
 # PANS_SOURCES at pans/CMakeLists.txt:1 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/fengyue/workspace/pans/pans/*.cc")
 set(OLD_GLOB
+  "/home/fengyue/workspace/pans/pans/src/Logger/LogLine.cc"
+  "/home/fengyue/workspace/pans/pans/src/Logger/Log_level.cc"
   "/home/fengyue/workspace/pans/pans/src/Logger/Logger.cc"
   "/home/fengyue/workspace/pans/pans/src/Logger/apender.cc"
   "/home/fengyue/workspace/pans/pans/src/Logger/formatter.cc"
+  "/home/fengyue/workspace/pans/pans/src/utils/string_utils.cc"
+  "/home/fengyue/workspace/pans/pans/src/utils/system_utils.cc"
+  "/home/fengyue/workspace/pans/pans/src/utils/thread_utils.cc"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -63,16 +68,22 @@ endif()
 # PANS_HEADERS at pans/CMakeLists.txt:2 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/fengyue/workspace/pans/pans/*.h")
 set(OLD_GLOB
+  "/home/fengyue/workspace/pans/pans/include/pans/Logger/Log.h"
   "/home/fengyue/workspace/pans/pans/include/pans/Logger/Log_level.h"
+  "/home/fengyue/workspace/pans/pans/include/pans/Logger/Logger.h"
   "/home/fengyue/workspace/pans/pans/include/pans/Logger/appender.h"
   "/home/fengyue/workspace/pans/pans/include/pans/export.h"
   "/home/fengyue/workspace/pans/pans/include/pans/macros.h"
   "/home/fengyue/workspace/pans/pans/include/pans/mutex.h"
+  "/home/fengyue/workspace/pans/pans/include/pans/utils/string_utils.h"
+  "/home/fengyue/workspace/pans/pans/include/pans/utils/system_utils.h"
+  "/home/fengyue/workspace/pans/pans/include/pans/utils/thread_utils.h"
   "/home/fengyue/workspace/pans/pans/src/Logger/appender_impl.h"
   "/home/fengyue/workspace/pans/pans/src/Logger/buffer.h"
   "/home/fengyue/workspace/pans/pans/src/Logger/buffer_config.h"
   "/home/fengyue/workspace/pans/pans/src/Logger/formatter.h"
   "/home/fengyue/workspace/pans/pans/src/Logger/log_record.h"
+  "/home/fengyue/workspace/pans/pans/src/Logger/logger_impl.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

@@ -186,6 +186,54 @@ pans/fast:
 	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/build
 .PHONY : pans/fast
 
+src/Logger/LogLine.o: src/Logger/LogLine.cc.o
+.PHONY : src/Logger/LogLine.o
+
+# target to build an object file
+src/Logger/LogLine.cc.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/LogLine.cc.o
+.PHONY : src/Logger/LogLine.cc.o
+
+src/Logger/LogLine.i: src/Logger/LogLine.cc.i
+.PHONY : src/Logger/LogLine.i
+
+# target to preprocess a source file
+src/Logger/LogLine.cc.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/LogLine.cc.i
+.PHONY : src/Logger/LogLine.cc.i
+
+src/Logger/LogLine.s: src/Logger/LogLine.cc.s
+.PHONY : src/Logger/LogLine.s
+
+# target to generate assembly for a file
+src/Logger/LogLine.cc.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/LogLine.cc.s
+.PHONY : src/Logger/LogLine.cc.s
+
+src/Logger/Log_level.o: src/Logger/Log_level.cc.o
+.PHONY : src/Logger/Log_level.o
+
+# target to build an object file
+src/Logger/Log_level.cc.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/Log_level.cc.o
+.PHONY : src/Logger/Log_level.cc.o
+
+src/Logger/Log_level.i: src/Logger/Log_level.cc.i
+.PHONY : src/Logger/Log_level.i
+
+# target to preprocess a source file
+src/Logger/Log_level.cc.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/Log_level.cc.i
+.PHONY : src/Logger/Log_level.cc.i
+
+src/Logger/Log_level.s: src/Logger/Log_level.cc.s
+.PHONY : src/Logger/Log_level.s
+
+# target to generate assembly for a file
+src/Logger/Log_level.cc.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/Log_level.cc.s
+.PHONY : src/Logger/Log_level.cc.s
+
 src/Logger/Logger.o: src/Logger/Logger.cc.o
 .PHONY : src/Logger/Logger.o
 
@@ -258,6 +306,78 @@ src/Logger/formatter.cc.s:
 	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/Logger/formatter.cc.s
 .PHONY : src/Logger/formatter.cc.s
 
+src/utils/string_utils.o: src/utils/string_utils.cc.o
+.PHONY : src/utils/string_utils.o
+
+# target to build an object file
+src/utils/string_utils.cc.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/utils/string_utils.cc.o
+.PHONY : src/utils/string_utils.cc.o
+
+src/utils/string_utils.i: src/utils/string_utils.cc.i
+.PHONY : src/utils/string_utils.i
+
+# target to preprocess a source file
+src/utils/string_utils.cc.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/utils/string_utils.cc.i
+.PHONY : src/utils/string_utils.cc.i
+
+src/utils/string_utils.s: src/utils/string_utils.cc.s
+.PHONY : src/utils/string_utils.s
+
+# target to generate assembly for a file
+src/utils/string_utils.cc.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/utils/string_utils.cc.s
+.PHONY : src/utils/string_utils.cc.s
+
+src/utils/system_utils.o: src/utils/system_utils.cc.o
+.PHONY : src/utils/system_utils.o
+
+# target to build an object file
+src/utils/system_utils.cc.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/utils/system_utils.cc.o
+.PHONY : src/utils/system_utils.cc.o
+
+src/utils/system_utils.i: src/utils/system_utils.cc.i
+.PHONY : src/utils/system_utils.i
+
+# target to preprocess a source file
+src/utils/system_utils.cc.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/utils/system_utils.cc.i
+.PHONY : src/utils/system_utils.cc.i
+
+src/utils/system_utils.s: src/utils/system_utils.cc.s
+.PHONY : src/utils/system_utils.s
+
+# target to generate assembly for a file
+src/utils/system_utils.cc.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/utils/system_utils.cc.s
+.PHONY : src/utils/system_utils.cc.s
+
+src/utils/thread_utils.o: src/utils/thread_utils.cc.o
+.PHONY : src/utils/thread_utils.o
+
+# target to build an object file
+src/utils/thread_utils.cc.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/utils/thread_utils.cc.o
+.PHONY : src/utils/thread_utils.cc.o
+
+src/utils/thread_utils.i: src/utils/thread_utils.cc.i
+.PHONY : src/utils/thread_utils.i
+
+# target to preprocess a source file
+src/utils/thread_utils.cc.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/utils/thread_utils.cc.i
+.PHONY : src/utils/thread_utils.cc.i
+
+src/utils/thread_utils.s: src/utils/thread_utils.cc.s
+.PHONY : src/utils/thread_utils.s
+
+# target to generate assembly for a file
+src/utils/thread_utils.cc.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f pans/CMakeFiles/pans.dir/build.make pans/CMakeFiles/pans.dir/src/utils/thread_utils.cc.s
+.PHONY : src/utils/thread_utils.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -272,6 +392,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... pans"
+	@echo "... src/Logger/LogLine.o"
+	@echo "... src/Logger/LogLine.i"
+	@echo "... src/Logger/LogLine.s"
+	@echo "... src/Logger/Log_level.o"
+	@echo "... src/Logger/Log_level.i"
+	@echo "... src/Logger/Log_level.s"
 	@echo "... src/Logger/Logger.o"
 	@echo "... src/Logger/Logger.i"
 	@echo "... src/Logger/Logger.s"
@@ -281,6 +407,15 @@ help:
 	@echo "... src/Logger/formatter.o"
 	@echo "... src/Logger/formatter.i"
 	@echo "... src/Logger/formatter.s"
+	@echo "... src/utils/string_utils.o"
+	@echo "... src/utils/string_utils.i"
+	@echo "... src/utils/string_utils.s"
+	@echo "... src/utils/system_utils.o"
+	@echo "... src/utils/system_utils.i"
+	@echo "... src/utils/system_utils.s"
+	@echo "... src/utils/thread_utils.o"
+	@echo "... src/utils/thread_utils.i"
+	@echo "... src/utils/thread_utils.s"
 .PHONY : help
 
 

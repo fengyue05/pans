@@ -3,8 +3,8 @@
 
 tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o: /home/fengyue/workspace/pans/tests/inner_tests/test_log_buffer.cpp \
   /home/fengyue/workspace/pans/pans/include/pans/macros.h \
-  /home/fengyue/workspace/pans/pans/src/buffer.h \
-  /home/fengyue/workspace/pans/pans/src/buffer_config.h \
+  /home/fengyue/workspace/pans/pans/src/Logger/buffer.h \
+  /home/fengyue/workspace/pans/pans/src/Logger/buffer_config.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -426,10 +426,6 @@ tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o: /home/fe
 
 /usr/include/c++/11/bits/ranges_algo.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
 /usr/include/c++/11/bits/postypes.h:
 
 /usr/include/c++/11/cwctype:
@@ -536,6 +532,10 @@ tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o: /home/fe
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
 /usr/include/c++/11/bits/max_size_type.h:
 
 /usr/include/c++/11/bits/stl_construct.h:
@@ -553,14 +553,6 @@ tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o: /home/fe
 /usr/include/c++/11/bits/localefwd.h:
 
 /home/fengyue/workspace/pans/tests/inner_tests/test_log_buffer.cpp:
-
-/home/fengyue/workspace/pans/pans/include/pans/macros.h:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
@@ -596,16 +588,6 @@ tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o: /home/fe
 
 /usr/include/c++/11/cstddef:
 
-/home/fengyue/workspace/pans/pans/src/buffer_config.h:
-
-/usr/include/stdint.h:
-
-/home/fengyue/workspace/pans/pans/src/buffer.h:
-
-/usr/include/c++/11/bits/stl_function.h:
-
-/usr/include/c++/11/bits/stl_tempbuf.h:
-
 /usr/include/c++/11/bits/range_access.h:
 
 /usr/include/alloca.h:
@@ -618,12 +600,6 @@ tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o: /home/fe
 
 /usr/include/c++/11/bits/functexcept.h:
 
-/usr/include/c++/11/bits/ios_base.h:
-
-/usr/include/c++/11/cstdio:
-
-/usr/include/endian.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
@@ -632,6 +608,10 @@ tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o: /home/fe
 
 /usr/include/c++/11/bits/charconv.h:
 
+/home/fengyue/workspace/pans/pans/src/Logger/buffer_config.h:
+
+/usr/include/c++/11/locale:
+
 /usr/include/c++/11/bits/stl_algobase.h:
 
 /usr/include/c++/11/bits/ranges_cmp.h:
@@ -639,10 +619,6 @@ tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o: /home/fe
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/11/bits/basic_string.tcc:
-
-/usr/include/c++/11/iosfwd:
-
-/usr/include/c++/11/ios:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
@@ -659,6 +635,24 @@ tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o: /home/fe
 /usr/include/c++/11/bits/exception_ptr.h:
 
 /usr/include/c++/11/cwchar:
+
+/home/fengyue/workspace/pans/pans/include/pans/macros.h:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/endian.h:
+
+/usr/include/c++/11/cstdio:
+
+/usr/include/c++/11/ios:
+
+/usr/include/c++/11/iosfwd:
 
 /usr/include/c++/11/bits/exception.h:
 
@@ -686,6 +680,12 @@ tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o: /home/fe
 
 /usr/include/c++/11/bits/stl_pair.h:
 
+/usr/include/stdint.h:
+
+/usr/include/c++/11/bits/stl_function.h:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
+
 /usr/include/x86_64-linux-gnu/asm/unistd_64.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
@@ -699,6 +699,8 @@ tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o: /home/fe
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/home/fengyue/workspace/pans/pans/src/Logger/buffer.h:
 
 /usr/include/c++/11/cassert:
 
@@ -779,8 +781,6 @@ tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o: /home/fe
 /usr/include/c++/11/istream:
 
 /usr/include/c++/11/iterator:
-
-/usr/include/c++/11/locale:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
 

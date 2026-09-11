@@ -1,6 +1,18 @@
 [
 {
   "directory": "/home/fengyue/workspace/pans/build/pans",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger/LogLine.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/LogLine.cc",
+  "file": "/home/fengyue/workspace/pans/pans/src/Logger/LogLine.cc",
+  "output": "pans/CMakeFiles/pans.dir/src/Logger/LogLine.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/pans/build/pans",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger/Log_level.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/Log_level.cc",
+  "file": "/home/fengyue/workspace/pans/pans/src/Logger/Log_level.cc",
+  "output": "pans/CMakeFiles/pans.dir/src/Logger/Log_level.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/pans/build/pans",
   "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger/Logger.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/Logger.cc",
   "file": "/home/fengyue/workspace/pans/pans/src/Logger/Logger.cc",
   "output": "pans/CMakeFiles/pans.dir/src/Logger/Logger.cc.o"
@@ -16,6 +28,24 @@
   "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger/formatter.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/formatter.cc",
   "file": "/home/fengyue/workspace/pans/pans/src/Logger/formatter.cc",
   "output": "pans/CMakeFiles/pans.dir/src/Logger/formatter.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/pans/build/pans",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/utils/string_utils.cc.o -c /home/fengyue/workspace/pans/pans/src/utils/string_utils.cc",
+  "file": "/home/fengyue/workspace/pans/pans/src/utils/string_utils.cc",
+  "output": "pans/CMakeFiles/pans.dir/src/utils/string_utils.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/pans/build/pans",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/utils/system_utils.cc.o -c /home/fengyue/workspace/pans/pans/src/utils/system_utils.cc",
+  "file": "/home/fengyue/workspace/pans/pans/src/utils/system_utils.cc",
+  "output": "pans/CMakeFiles/pans.dir/src/utils/system_utils.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/pans/build/pans",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/utils/thread_utils.cc.o -c /home/fengyue/workspace/pans/pans/src/utils/thread_utils.cc",
+  "file": "/home/fengyue/workspace/pans/pans/src/utils/thread_utils.cc",
+  "output": "pans/CMakeFiles/pans.dir/src/utils/thread_utils.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/tests",
