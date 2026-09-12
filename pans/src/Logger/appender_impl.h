@@ -27,7 +27,7 @@ protected:
     std::mutex mutex_;
 
 private:
-    std::atomic<LogLevel::Level> level_{LogLevel::Level::LOG_DEBUG};
+    std::atomic<LogLevel::Level> level_{LogLevel::Level::LOG_LV_DEBUG};
 };
 
 namespace detail

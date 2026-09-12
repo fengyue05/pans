@@ -199,6 +199,19 @@ test_lock/fast:
 .PHONY : test_lock/fast
 
 #=============================================================================
+# Target rules for targets named test_logger
+
+# Build rule for target.
+test_logger: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_logger
+.PHONY : test_logger
+
+# fast build rule for target.
+test_logger/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_logger.dir/build.make tests/CMakeFiles/test_logger.dir/build
+.PHONY : test_logger/fast
+
+#=============================================================================
 # Target rules for targets named test_mutex
 
 # Build rule for target.
@@ -240,6 +253,7 @@ help:
 	@echo "... pans"
 	@echo "... test_lock"
 	@echo "... test_log_buffer"
+	@echo "... test_logger"
 	@echo "... test_mutex"
 .PHONY : help
 

@@ -35,7 +35,7 @@ public:
 
 private:
     std::string name_;
-    std::atomic<LogLevel::Level> level_{LogLevel::Level::LOG_DEBUG};
+    std::atomic<LogLevel::Level> level_{LogLevel::Level::LOG_LV_DEBUG};
 
     mutable std::shared_mutex mutex_;
     std::shared_ptr<const detail::Formatter> formatter_;

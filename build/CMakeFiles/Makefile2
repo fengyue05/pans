@@ -106,12 +106,14 @@ pans/clean: pans/CMakeFiles/pans.dir/clean
 
 # Recursive "all" directory target.
 tests/all: tests/CMakeFiles/test_lock.dir/all
+tests/all: tests/CMakeFiles/test_logger.dir/all
 tests/all: tests/CMakeFiles/test_mutex.dir/all
 tests/all: tests/inner_tests/all
 .PHONY : tests/all
 
 # Recursive "codegen" directory target.
 tests/codegen: tests/CMakeFiles/test_lock.dir/codegen
+tests/codegen: tests/CMakeFiles/test_logger.dir/codegen
 tests/codegen: tests/CMakeFiles/test_mutex.dir/codegen
 tests/codegen: tests/inner_tests/codegen
 .PHONY : tests/codegen
@@ -122,6 +124,7 @@ tests/preinstall: tests/inner_tests/preinstall
 
 # Recursive "clean" directory target.
 tests/clean: tests/CMakeFiles/test_lock.dir/clean
+tests/clean: tests/CMakeFiles/test_logger.dir/clean
 tests/clean: tests/CMakeFiles/test_mutex.dir/clean
 tests/clean: tests/inner_tests/clean
 .PHONY : tests/clean
@@ -210,13 +213,45 @@ tests/CMakeFiles/test_lock.dir/clean:
 .PHONY : tests/CMakeFiles/test_lock.dir/clean
 
 #=============================================================================
+# Target rules for target tests/CMakeFiles/test_logger.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_logger.dir/all: pans/CMakeFiles/pans.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_logger.dir/build.make tests/CMakeFiles/test_logger.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_logger.dir/build.make tests/CMakeFiles/test_logger.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fengyue/workspace/pans/build/CMakeFiles --progress-num=14,15 "Built target test_logger"
+.PHONY : tests/CMakeFiles/test_logger.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_logger.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fengyue/workspace/pans/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_logger.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fengyue/workspace/pans/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_logger.dir/rule
+
+# Convenience name for target.
+test_logger: tests/CMakeFiles/test_logger.dir/rule
+.PHONY : test_logger
+
+# codegen rule for target.
+tests/CMakeFiles/test_logger.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_logger.dir/build.make tests/CMakeFiles/test_logger.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fengyue/workspace/pans/build/CMakeFiles --progress-num=14,15 "Finished codegen for target test_logger"
+.PHONY : tests/CMakeFiles/test_logger.dir/codegen
+
+# clean rule for target.
+tests/CMakeFiles/test_logger.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_logger.dir/build.make tests/CMakeFiles/test_logger.dir/clean
+.PHONY : tests/CMakeFiles/test_logger.dir/clean
+
+#=============================================================================
 # Target rules for target tests/CMakeFiles/test_mutex.dir
 
 # All Build rule for target.
 tests/CMakeFiles/test_mutex.dir/all: pans/CMakeFiles/pans.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mutex.dir/build.make tests/CMakeFiles/test_mutex.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mutex.dir/build.make tests/CMakeFiles/test_mutex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fengyue/workspace/pans/build/CMakeFiles --progress-num=14,15 "Built target test_mutex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fengyue/workspace/pans/build/CMakeFiles --progress-num=16,17 "Built target test_mutex"
 .PHONY : tests/CMakeFiles/test_mutex.dir/all
 
 # Build rule for subdir invocation for target.
@@ -233,7 +268,7 @@ test_mutex: tests/CMakeFiles/test_mutex.dir/rule
 # codegen rule for target.
 tests/CMakeFiles/test_mutex.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mutex.dir/build.make tests/CMakeFiles/test_mutex.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fengyue/workspace/pans/build/CMakeFiles --progress-num=14,15 "Finished codegen for target test_mutex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fengyue/workspace/pans/build/CMakeFiles --progress-num=16,17 "Finished codegen for target test_mutex"
 .PHONY : tests/CMakeFiles/test_mutex.dir/codegen
 
 # clean rule for target.

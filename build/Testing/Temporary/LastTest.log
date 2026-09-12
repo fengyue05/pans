@@ -1,0 +1,175 @@
+Start testing: Sep 12 23:16 CST
+----------------------------------------------------------
+1/4 Testing: test_lock
+1/4 Test: test_lock
+Command: "/home/fengyue/workspace/pans/bin/tests/test_lock" "1000"
+Directory: /home/fengyue/workspace/pans/build/tests
+"test_lock" start time: Sep 12 23:16 CST
+Output:
+----------------------------------------------------------
+operations: 1000, average of 7 runs
+
+threads: 1
+mutex         48741.86 ns 	total, 48.74 ns/op
+shared mutex  66459.00 ns 	total, 66.46 ns/op
+atomic        44370.00 ns 	total, 44.37 ns/op
+atomic CAS    45074.14 ns 	total, 45.07 ns/op
+
+threads: 2
+mutex         69591.29 ns 	total, 69.59 ns/op
+shared mutex  68233.43 ns 	total, 68.23 ns/op
+atomic        41508.00 ns 	total, 41.51 ns/op
+atomic CAS    52797.14 ns 	total, 52.80 ns/op
+
+threads: 4
+mutex         67723.71 ns 	total, 67.72 ns/op
+shared mutex  90373.29 ns 	total, 90.37 ns/op
+atomic        43532.00 ns 	total, 43.53 ns/op
+atomic CAS    57825.43 ns 	total, 57.83 ns/op
+
+threads: 8
+mutex         85034.57 ns 	total, 85.03 ns/op
+shared mutex  116994.43 ns 	total, 116.99 ns/op
+atomic        53425.43 ns 	total, 53.43 ns/op
+atomic CAS    76555.71 ns 	total, 76.56 ns/op
+
+threads: 10
+mutex         92503.71 ns 	total, 92.50 ns/op
+shared mutex  122944.86 ns 	total, 122.94 ns/op
+atomic        58739.14 ns 	total, 58.74 ns/op
+atomic CAS    68358.86 ns 	total, 68.36 ns/op
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"test_lock" end time: Sep 12 23:16 CST
+"test_lock" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: test_logger
+2/4 Test: test_logger
+Command: "/home/fengyue/workspace/pans/bin/tests/test_logger"
+Directory: /home/fengyue/workspace/pans/build/tests
+"test_logger" start time: Sep 12 23:16 CST
+Output:
+----------------------------------------------------------
+2026-09-12 23:16:22.374722	thread=741	fiber=0	[DEBUG]	/home/fengyue/workspace/pans/tests/test_logger.cpp:18	debug message
+2026-09-12 23:16:22.374750	thread=741	fiber=0	[INFO]	/home/fengyue/workspace/pans/tests/test_logger.cpp:19	info message
+2026-09-12 23:16:22.374751	thread=741	fiber=0	[WARN]	/home/fengyue/workspace/pans/tests/test_logger.cpp:20	warning message
+2026-09-12 23:16:22.374753	thread=741	fiber=0	[ERROR]	/home/fengyue/workspace/pans/tests/test_logger.cpp:21	error message
+2026-09-12 23:16:22.374754	thread=741	fiber=0	[FATAL]	/home/fengyue/workspace/pans/tests/test_logger.cpp:22	fatal message
+----------------------------------------------------
+2026-09-12 23:16:22.374767	thread=741	fiber=0	[DEBUG]	/home/fengyue/workspace/pans/tests/test_logger.cpp:24	debug message
+2026-09-12 23:16:22.374769	thread=741	fiber=0	[INFO]	/home/fengyue/workspace/pans/tests/test_logger.cpp:25	info message
+2026-09-12 23:16:22.374770	thread=741	fiber=0	[WARN]	/home/fengyue/workspace/pans/tests/test_logger.cpp:26	warn message
+2026-09-12 23:16:22.374771	thread=741	fiber=0	[ERROR]	/home/fengyue/workspace/pans/tests/test_logger.cpp:27	error message
+2026-09-12 23:16:22.374772	thread=741	fiber=0	[FATAL]	/home/fengyue/workspace/pans/tests/test_logger.cpp:28	fatal message
+----------------------------------------------------
+2026-09-12 23:16:22.374774	thread=741	fiber=0	[INFO]	/home/fengyue/workspace/pans/tests/test_logger.cpp:38	c=a i=42 msg1: hello msg2: world msg3: pans 磐石
+2026-09-12 23:16:22.374777	thread=741	fiber=0	[INFO]	/home/fengyue/workspace/pans/tests/test_logger.cpp:39	c=a i=42 msg1: hello msg2: world msg3: pans 磐石
+
+The same records were written to: "/tmp/test_logger.log"
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_logger" end time: Sep 12 23:16 CST
+"test_logger" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: test_mutex
+3/4 Test: test_mutex
+Command: "/home/fengyue/workspace/pans/bin/tests/test_mutex" "1000"
+Directory: /home/fengyue/workspace/pans/build/tests
+"test_mutex" start time: Sep 12 23:16 CST
+Output:
+----------------------------------------------------------
+operations: 1000, average of 7 runs
+
+threads: 1
+pthread_spinlock::Spinlock    59422.43 ns 	total, 59.42 ns/op
+atomic_flag::Spinlock         35149.57 ns 	total, 35.15 ns/op
+atomic_wait                   47610.86 ns 	total, 47.61 ns/op
+std::mutex                    32913.71 ns 	total, 32.91 ns/op
+
+threads: 2
+pthread_spinlock::Spinlock    67408.00 ns 	total, 67.41 ns/op
+atomic_flag::Spinlock         92718.14 ns 	total, 92.72 ns/op
+atomic_wait                   140243.29 ns 	total, 140.24 ns/op
+std::mutex                    71679.00 ns 	total, 71.68 ns/op
+
+threads: 4
+pthread_spinlock::Spinlock    79569.57 ns 	total, 79.57 ns/op
+atomic_flag::Spinlock         85175.00 ns 	total, 85.17 ns/op
+atomic_wait                   212291.43 ns 	total, 212.29 ns/op
+std::mutex                    60950.43 ns 	total, 60.95 ns/op
+
+threads: 8
+pthread_spinlock::Spinlock    115475.86 ns 	total, 115.48 ns/op
+atomic_flag::Spinlock         102342.71 ns 	total, 102.34 ns/op
+atomic_wait                   284023.14 ns 	total, 284.02 ns/op
+std::mutex                    62738.14 ns 	total, 62.74 ns/op
+
+threads: 10
+pthread_spinlock::Spinlock    100361.43 ns 	total, 100.36 ns/op
+atomic_flag::Spinlock         117013.86 ns 	total, 117.01 ns/op
+atomic_wait                   287452.43 ns 	total, 287.45 ns/op
+std::mutex                    81389.00 ns 	total, 81.39 ns/op
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"test_mutex" end time: Sep 12 23:16 CST
+"test_mutex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: test_log_buffer
+4/4 Test: test_log_buffer
+Command: "/home/fengyue/workspace/pans/bin/tests/test_log_buffer" "1000"
+Directory: /home/fengyue/workspace/pans/build/tests/inner_tests
+"test_log_buffer" start time: Sep 12 23:16 CST
+Output:
+----------------------------------------------------------
+operations: 1000, average of 7 runs
+
+message: 50 characters
+SmallStreamBuffer             64889.57 ns 	total, 64.89 ns/op
+std::stringstream             104123.86 ns 	total, 104.12 ns/op
+speedup: 1.60x
+
+message: 100 characters
+SmallStreamBuffer             65452.57 ns 	total, 65.45 ns/op
+std::stringstream             86944.29 ns 	total, 86.94 ns/op
+speedup: 1.33x
+
+message: 200 characters
+SmallStreamBuffer             211539.29 ns 	total, 211.54 ns/op
+std::stringstream             92742.43 ns 	total, 92.74 ns/op
+speedup: 0.44x
+
+message: 500 characters
+SmallStreamBuffer             242892.57 ns 	total, 242.89 ns/op
+std::stringstream             88599.29 ns 	total, 88.60 ns/op
+speedup: 0.36x
+
+message: 1000 characters
+SmallStreamBuffer             229073.57 ns 	total, 229.07 ns/op
+std::stringstream             117840.86 ns 	total, 117.84 ns/op
+speedup: 0.51x
+
+message: 2048 characters
+SmallStreamBuffer             228877.29 ns 	total, 228.88 ns/op
+std::stringstream             189769.71 ns 	total, 189.77 ns/op
+speedup: 0.83x
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_log_buffer" end time: Sep 12 23:16 CST
+"test_log_buffer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 12 23:16 CST

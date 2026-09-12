@@ -14,6 +14,7 @@ endif()
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/fengyue/workspace/pans/tests/*.cpp")
 set(OLD_GLOB
   "/home/fengyue/workspace/pans/tests/test_lock.cpp"
+  "/home/fengyue/workspace/pans/tests/test_logger.cpp"
   "/home/fengyue/workspace/pans/tests/test_mutex.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

@@ -5,7 +5,6 @@
 #include <memory>
 #include <new>
 #include <ostream>
-#include <thread>
 #include <vector>
 
 #include <pans/Logger/Log.h>

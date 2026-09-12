@@ -202,15 +202,8 @@ pans/CMakeFiles/pans.dir/src/Logger/LogLine.cc.o: \
  /usr/include/c++/11/bits/stream_iterator.h \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/thread \
- /usr/include/c++/11/stop_token /usr/include/c++/11/atomic \
- /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/semaphore \
- /usr/include/c++/11/bits/semaphore_base.h \
- /usr/include/c++/11/bits/atomic_timed_wait.h \
- /usr/include/c++/11/bits/this_thread_sleep.h \
- /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /home/fengyue/workspace/pans/pans/include/pans/Logger/Log.h \
@@ -239,7 +232,7 @@ pans/CMakeFiles/pans.dir/src/Logger/LogLine.cc.o: \
  /usr/include/c++/11/bits/erase_if.h \
  /home/fengyue/workspace/pans/pans/src/Logger/buffer_config.h \
  /home/fengyue/workspace/pans/pans/src/Logger/logger_impl.h \
- /usr/include/c++/11/shared_mutex \
+ /usr/include/c++/11/atomic /usr/include/c++/11/shared_mutex \
  /home/fengyue/workspace/pans/pans/src/Logger/formatter.h \
  /home/fengyue/workspace/pans/pans/src/Logger/buffer.h \
  /home/fengyue/workspace/pans/pans/src/Logger/buffer_config.h \

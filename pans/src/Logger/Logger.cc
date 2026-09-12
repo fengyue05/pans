@@ -144,6 +144,16 @@ void Logger::Impl::setLevel(LogLevel::Level level) noexcept
     level_.store(level, std::memory_order_release);
 }
 
+LogLevel::Level Logger::Impl::getLevel() const noexcept
+{
+    return level_.load(std::memory_order_acquire);
+}
+
+std::string_view Logger::Impl::getName() const noexcept
+{
+    return name_;
+}
+
 void Logger::Impl::setFormatter(std::shared_ptr<const detail::Formatter> formatter)
 {
     ASSERT_RETNONE2(formatter != nullptr, "logger formatter cannot be null");

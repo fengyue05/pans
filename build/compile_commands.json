@@ -55,6 +55,12 @@
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/tests",
+  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -o CMakeFiles/test_logger.dir/test_logger.cpp.o -c /home/fengyue/workspace/pans/tests/test_logger.cpp",
+  "file": "/home/fengyue/workspace/pans/tests/test_logger.cpp",
+  "output": "tests/CMakeFiles/test_logger.dir/test_logger.cpp.o"
+},
+{
+  "directory": "/home/fengyue/workspace/pans/build/tests",
   "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -o CMakeFiles/test_mutex.dir/test_mutex.cpp.o -c /home/fengyue/workspace/pans/tests/test_mutex.cpp",
   "file": "/home/fengyue/workspace/pans/tests/test_mutex.cpp",
   "output": "tests/CMakeFiles/test_mutex.dir/test_mutex.cpp.o"

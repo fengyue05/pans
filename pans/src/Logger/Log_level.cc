@@ -10,7 +10,7 @@ std::string_view LogLevel::ToString(Level level) noexcept
 {
     switch (level)
     {
-#define XX(name) case Level::LOG_##name : return #name;
+#define XX(name) case Level::LOG_LV_##name : return #name;
         XX(DEBUG)
         XX(INFO)
         XX(WARN)
@@ -30,7 +30,7 @@ LogLevel::Level LogLevel::FromString(std::string_view value) noexcept
         return static_cast<char>(std::toupper(character));
     });
     const std::string_view upper_value(normalized.data(), value.size());
-#define XX(name) if(upper_value == #name) return Level::LOG_##name;
+#define XX(name) if(upper_value == #name) return Level::LOG_LV_##name;
     XX(DEBUG)
     XX(INFO)
     XX(WARN)
@@ -38,7 +38,7 @@ LogLevel::Level LogLevel::FromString(std::string_view value) noexcept
     XX(OFF)
     XX(ERROR)
 #undef XX
-    return Level::LOG_OFF;
+    return Level::LOG_LV_OFF;
 }
 
 } // namespace pans

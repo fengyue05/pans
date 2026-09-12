@@ -187,6 +187,20 @@ test_lock/fast:
 .PHONY : test_lock/fast
 
 # Convenience name for target.
+tests/CMakeFiles/test_logger.dir/rule:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_logger.dir/rule
+.PHONY : tests/CMakeFiles/test_logger.dir/rule
+
+# Convenience name for target.
+test_logger: tests/CMakeFiles/test_logger.dir/rule
+.PHONY : test_logger
+
+# fast build rule for target.
+test_logger/fast:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_logger.dir/build.make tests/CMakeFiles/test_logger.dir/build
+.PHONY : test_logger/fast
+
+# Convenience name for target.
 tests/CMakeFiles/test_mutex.dir/rule:
 	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_mutex.dir/rule
 .PHONY : tests/CMakeFiles/test_mutex.dir/rule
@@ -223,6 +237,30 @@ test_lock.s: test_lock.cpp.s
 test_lock.cpp.s:
 	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_lock.dir/build.make tests/CMakeFiles/test_lock.dir/test_lock.cpp.s
 .PHONY : test_lock.cpp.s
+
+test_logger.o: test_logger.cpp.o
+.PHONY : test_logger.o
+
+# target to build an object file
+test_logger.cpp.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_logger.dir/build.make tests/CMakeFiles/test_logger.dir/test_logger.cpp.o
+.PHONY : test_logger.cpp.o
+
+test_logger.i: test_logger.cpp.i
+.PHONY : test_logger.i
+
+# target to preprocess a source file
+test_logger.cpp.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_logger.dir/build.make tests/CMakeFiles/test_logger.dir/test_logger.cpp.i
+.PHONY : test_logger.cpp.i
+
+test_logger.s: test_logger.cpp.s
+.PHONY : test_logger.s
+
+# target to generate assembly for a file
+test_logger.cpp.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_logger.dir/build.make tests/CMakeFiles/test_logger.dir/test_logger.cpp.s
+.PHONY : test_logger.cpp.s
 
 test_mutex.o: test_mutex.cpp.o
 .PHONY : test_mutex.o
@@ -262,10 +300,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... test_lock"
+	@echo "... test_logger"
 	@echo "... test_mutex"
 	@echo "... test_lock.o"
 	@echo "... test_lock.i"
 	@echo "... test_lock.s"
+	@echo "... test_logger.o"
+	@echo "... test_logger.i"
+	@echo "... test_logger.s"
 	@echo "... test_mutex.o"
 	@echo "... test_mutex.i"
 	@echo "... test_mutex.s"

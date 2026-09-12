@@ -1,0 +1,18 @@
+Start testing: Sep 12 23:15 CST
+----------------------------------------------------------
+1/4 Testing: test_lock
+1/4 Test: test_lock
+Command: "/home/fengyue/workspace/pans/bin/tests/test_lock"
+Directory: /home/fengyue/workspace/pans/build/tests
+"test_lock" start time: Sep 12 23:15 CST
+Output:
+----------------------------------------------------------
+Usage: ./test_lock count
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"test_lock" end time: Sep 12 23:15 CST
+"test_lock" time elapsed: 00:00:00
+----------------------------------------------------------
+

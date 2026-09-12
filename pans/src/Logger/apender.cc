@@ -52,7 +52,7 @@ void Appender::Impl::append(LogLevel::Level level, std::string_view formatted_re
     {
         std::lock_guard<std::mutex> lock(mutex_);
         writeUnlocked(formatted_record);
-        if (level == LogLevel::Level::LOG_FATAL)
+        if (level == LogLevel::Level::LOG_LV_FATAL)
         {
             flushUnlocked();
         }

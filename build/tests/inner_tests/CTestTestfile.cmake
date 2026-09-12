@@ -4,5 +4,5 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-add_test([=[test_log_buffer]=] "/home/fengyue/workspace/pans/bin/tests/test_log_buffer")
-set_tests_properties([=[test_log_buffer]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/fengyue/workspace/pans/tests/inner_tests/CMakeLists.txt;22;add_test;/home/fengyue/workspace/pans/tests/inner_tests/CMakeLists.txt;0;")
+add_test([=[test_log_buffer]=] "/home/fengyue/workspace/pans/bin/tests/test_log_buffer" "1000")
+set_tests_properties([=[test_log_buffer]=] PROPERTIES  TIMEOUT "30" _BACKTRACE_TRIPLES "/home/fengyue/workspace/pans/tests/inner_tests/CMakeLists.txt;22;add_test;/home/fengyue/workspace/pans/tests/inner_tests/CMakeLists.txt;0;")

@@ -34,8 +34,12 @@ foreach(TEST_SOURCE IN LISTS PANS_TEST_SOURCES)
         )
     endforeach()
 
-    add_test(NAME "${TEST_NAME}" COMMAND "${TEST_NAME}")
+    if(TEST_NAME STREQUAL "test_lock" OR TEST_NAME STREQUAL "test_mutex")
+        add_test(NAME "${TEST_NAME}" COMMAND "${TEST_NAME}" 1000)
+    else()
+        add_test(NAME "${TEST_NAME}" COMMAND "${TEST_NAME}")
+    endif()
+    set_tests_properties("${TEST_NAME}" PROPERTIES TIMEOUT 30)
 endforeach()
 
 add_subdirectory(inner_tests)
-

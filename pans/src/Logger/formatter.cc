@@ -14,7 +14,7 @@ constexpr std::string_view DEFAULT_DATE_FORMAT = "%Y-%m-%d %H:%M:%S";
 Formatter::Formatter(std::string_view pattern)
     : pattern_(pattern)
 {
-    if (!pause()) 
+    if (parse() != 0)
     {
         throw std::invalid_argument("invalid logger format pattern");
     }
@@ -120,7 +120,7 @@ public:
         {
             std::tm buffer{}; // 保存得到目前时间的结构体
             const std::tm* result = localtime_r(&current_second, &buffer);
-            ASSERT_RETNONE2(result == nullptr, "failed to convert log time to local time");
+            ASSERT_RETNONE2(result != nullptr, "failed to convert log time to local time");
 
             /** 
              * @brief localtime_r是线程安全的，但是消耗也大：
@@ -159,7 +159,7 @@ public:
         // 秒内微秒必须补齐成固定六位，否则 12:00:00.1234 这样的时间戳无法解析，也无法按字典序排序
         std::array<char, MICROSECONDS_WIDTH> digits{};
         auto remaining = static_cast<u32>(microseconds);
-        for (std::size_t index = digits.size() - 1; index >= 0; ) 
+        for (std::size_t index = digits.size(); index-- > 0; )
         {
             digits[index] = static_cast<char>('0' + remaining % 10);
             remaining /= 10;

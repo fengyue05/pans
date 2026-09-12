@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/test_logger.dir/test_logger.cpp.o -o /home/fengyue/workspace/pans/bin/tests/test_logger  ../pans/libpans.a
