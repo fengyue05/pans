@@ -1,0 +1,39 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+find_dependency(Threads)
+
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    find_dependency(PkgConfig)
+    pkg_check_modules(PANS_LIBDW REQUIRED IMPORTED_TARGET libdw)
+endif()
+
+find_dependency(absl CONFIG PATHS "${PACKAGE_PREFIX_DIR}" NO_DEFAULT_PATH)
+find_dependency(ZLIB CONFIG COMPONENTS static PATHS "${PACKAGE_PREFIX_DIR}" NO_DEFAULT_PATH)
+
+# zlib 的静态安装包导出 ZLIB::ZLIBSTATIC，而 protobuf 的导出目标引用
+# ZLIB::ZLIB。提供一个兼容目标，把两者连接起来。
+if(TARGET ZLIB::ZLIBSTATIC AND NOT TARGET ZLIB::ZLIB)
+    add_library(ZLIB::ZLIB INTERFACE IMPORTED)
+    set_target_properties(ZLIB::ZLIB PROPERTIES
+        INTERFACE_LINK_LIBRARIES ZLIB::ZLIBSTATIC
+    )
+endif()
+
+find_dependency(utf8_range CONFIG PATHS "${PACKAGE_PREFIX_DIR}" NO_DEFAULT_PATH)
+find_dependency(protobuf CONFIG PATHS "${PACKAGE_PREFIX_DIR}" NO_DEFAULT_PATH)
+find_dependency(yaml-cpp CONFIG PATHS "${PACKAGE_PREFIX_DIR}" NO_DEFAULT_PATH)
+find_dependency(tinyxml2 CONFIG COMPONENTS static PATHS "${PACKAGE_PREFIX_DIR}" NO_DEFAULT_PATH)
+find_dependency(kcp CONFIG PATHS "${PACKAGE_PREFIX_DIR}" NO_DEFAULT_PATH)
+
+if(NOT TARGET rapidjson::rapidjson)
+    add_library(rapidjson::rapidjson INTERFACE IMPORTED)
+    set_target_properties(rapidjson::rapidjson PROPERTIES
+        INTERFACE_INCLUDE_DIRECTORIES "${PACKAGE_PREFIX_DIR}/include"
+    )
+endif()
+
+include("${CMAKE_CURRENT_LIST_DIR}/pansTargets.cmake")
+
+check_required_components(pans)

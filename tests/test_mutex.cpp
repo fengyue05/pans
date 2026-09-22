@@ -65,7 +65,7 @@ u64 OperationForThread(std::size_t thread_index, std::size_t thread_count)
 {
     const u64 base = target_ / thread_count;
     const u64 remainder = target_ % thread_index;
-    return base + (thread_index < thread_count ? 1 : 0);
+    return base + (remainder < thread_count ? 1 : 0);
 }
 
 template <typename Operation>

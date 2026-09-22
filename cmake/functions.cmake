@@ -1,0 +1,15 @@
+function(redefine_file_macro targets)
+    foreach(source_file IN LISTS targets)
+        if("${source_file}" STREQUAL "")
+            continue()
+        endif()
+        get_filename_component(absolute_path "${source_file}" ABSOLUTE)
+        file(RELATIVE_PATH relative_path "${PROJECT_SOURCE_DIR}" "${absolute_path}")
+        # 项目目录外的生成文件不保留其绝对路径。
+        if(IS_ABSOLUTE "${relative_path}" OR relative_path STREQUAL ".." OR relative_path MATCHES "^\\.\\./")
+            get_filename_component(relative_path "${source_file}" NAME)
+        endif()
+        set_source_files_properties("${source_file}" PROPERTIES COMPILE_DEFINITIONS "__FILE__=\"${relative_path}\"")
+    endforeach()
+endfunction()
+

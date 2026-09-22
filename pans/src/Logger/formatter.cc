@@ -47,7 +47,7 @@ public:
         : value_(std::move(value))
     {}
 
-    void format (const LogRecordView& record, FormattedRecordBuffer& output) const override
+    void format (const LogRecordView&, FormattedRecordBuffer& output) const override
     {
         output.append(value_);
     }
@@ -93,7 +93,7 @@ public:
 class NewLineFormatItem final : public Formatter::FormatItem
 {
 public:
-    void format(const LogRecordView& record, FormattedRecordBuffer& output) const override
+    void format(const LogRecordView&, FormattedRecordBuffer& output) const override
     {
         output.append('\n');
     }
@@ -192,7 +192,7 @@ public:
 class TabFormatItem final : public Formatter::FormatItem
 {
 public:
-    void format(const LogRecordView& record, FormattedRecordBuffer& output) const override
+    void format(const LogRecordView&, FormattedRecordBuffer& output) const override
     {
         output.append('\t');
     }
