@@ -66,6 +66,12 @@
   "output": "tests/CMakeFiles/test_mutex.dir/test_mutex.cpp.o"
 },
 {
+  "directory": "/home/fengyue/workspace/pans/build/tests",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/test_type_name.dir/test_type_name.cpp.o -c /home/fengyue/workspace/pans/tests/test_type_name.cpp",
+  "file": "/home/fengyue/workspace/pans/tests/test_type_name.cpp",
+  "output": "tests/CMakeFiles/test_type_name.dir/test_type_name.cpp.o"
+},
+{
   "directory": "/home/fengyue/workspace/pans/build/tests/inner_tests",
   "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o -c /home/fengyue/workspace/pans/tests/inner_tests/test_log_buffer.cpp",
   "file": "/home/fengyue/workspace/pans/tests/inner_tests/test_log_buffer.cpp",

@@ -7,13 +7,10 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: /home/fengyue/workspace/pans
   /home/fengyue/workspace/pans/pans/include/pans/Logger/Logger.h \
   /home/fengyue/workspace/pans/pans/include/pans/Logger/appender.h \
   /home/fengyue/workspace/pans/pans/include/pans/export.h \
-  /home/fengyue/workspace/pans/pans/include/pans/macros.h \
   /home/fengyue/workspace/pans/pans/include/pans/types.h \
-  /home/fengyue/workspace/pans/pans/include/pans/utils/system_utils.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/backward/binders.h \
@@ -105,7 +102,6 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: /home/fengyue/workspace/pans
   /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/uses_allocator_args.h \
-  /usr/include/c++/11/cassert \
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
   /usr/include/c++/11/chrono \
@@ -307,6 +303,8 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: /home/fengyue/workspace/pans
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
@@ -417,10 +415,6 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: /home/fengyue/workspace/pans
 
 /usr/include/sched.h:
 
-/usr/include/linux/limits.h:
-
-/usr/include/limits.h:
-
 /usr/include/c++/11/bits/ranges_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
@@ -483,19 +477,49 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: /home/fengyue/workspace/pans
 
 /usr/include/c++/11/bits/fstream.tcc:
 
+/usr/include/c++/11/bits/fs_ops.h:
+
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /home/fengyue/workspace/pans/pans/include/pans/types.h:
 
-/usr/include/c++/11/bits/exception.h:
+/usr/include/c++/11/bits/ranges_uninitialized.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+/usr/include/c++/11/bits/parse_numbers.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
+/usr/include/c++/11/memory:
 
-/usr/include/c++/11/bits/cxxabi_forced.h:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
-/usr/include/c++/11/bits/stream_iterator.h:
+/usr/include/c++/11/bits/fs_dir.h:
+
+/home/fengyue/workspace/pans/pans/include/pans/Logger/appender.h:
+
+/usr/include/c++/11/bits/localefwd.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/c++/11/bits/align.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/sstream.tcc:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/c++/11/bits/stringfwd.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/c++/11/bits/algorithmfwd.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/c++/11/backward/binders.h:
 
 /usr/include/c++/11/ext/atomicity.h:
 
@@ -504,10 +528,6 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: /home/fengyue/workspace/pans
 /usr/include/c++/11/bits/stl_algo.h:
 
 /usr/include/c++/11/cerrno:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/c++/11/bits/range_access.h:
 
@@ -531,39 +551,9 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: /home/fengyue/workspace/pans
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
-/usr/include/c++/11/array:
-
-/usr/include/c++/11/bits/sstream.tcc:
-
-/usr/include/c++/11/bits/fs_ops.h:
-
-/usr/include/assert.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/pthread.h:
-
-/usr/include/c++/11/new:
-
 /usr/include/c++/11/bits/codecvt.h:
 
-/home/fengyue/workspace/pans/pans/include/pans/macros.h:
-
-/home/fengyue/workspace/pans/pans/include/pans/utils/system_utils.h:
-
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
-/usr/include/c++/11/cassert:
-
 /usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
-/usr/include/linux/close_range.h:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
-
-/usr/include/c++/11/iomanip:
 
 /usr/include/errno.h:
 
@@ -573,33 +563,13 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: /home/fengyue/workspace/pans
 
 /usr/include/c++/11/cwctype:
 
+/usr/include/c++/11/bits/shared_ptr_base.h:
+
+/usr/include/c++/11/bits/max_size_type.h:
+
+/usr/include/c++/11/bits/stl_construct.h:
+
 /usr/include/c++/11/bits/locale_classes.h:
-
-/home/fengyue/workspace/pans/pans/include/pans/Logger/appender.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/c++/11/bits/fs_dir.h:
-
-/usr/include/c++/11/bits/localefwd.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/c++/11/backward/binders.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
-/usr/include/c++/11/bits/algorithmfwd.h:
-
-/usr/include/c++/11/bits/concept_check.h:
-
-/usr/include/locale.h:
-
-/usr/include/c++/11/ext/concurrence.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -611,19 +581,15 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: /home/fengyue/workspace/pans
 
 /usr/include/c++/11/bits/allocator.h:
 
-/usr/include/c++/11/bits/ranges_uninitialized.h:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/home/fengyue/workspace/pans/pans/include/pans/Logger/Logger.h:
+/usr/include/c++/11/bits/concept_check.h:
 
 /usr/include/c++/11/bits/nested_exception.h:
 
-/usr/include/c++/11/memory:
+/home/fengyue/workspace/pans/pans/include/pans/Logger/Logger.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+/usr/include/locale.h:
 
-/usr/include/c++/11/bits/align.h:
+/usr/include/c++/11/ext/concurrence.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -685,11 +651,21 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: /home/fengyue/workspace/pans
 
 /usr/include/c++/11/cwchar:
 
-/usr/include/c++/11/bits/shared_ptr_base.h:
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/c++/11/bits/max_size_type.h:
+/usr/include/pthread.h:
 
-/usr/include/c++/11/bits/stl_construct.h:
+/usr/include/c++/11/new:
+
+/usr/include/c++/11/bits/exception.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/c++/11/bits/cxxabi_forced.h:
+
+/usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/c++/11/bits/std_mutex.h:
 
@@ -785,6 +761,14 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: /home/fengyue/workspace/pans
 
 /usr/include/c++/11/ext/new_allocator.h:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+
+/usr/include/c++/11/iomanip:
+
+/usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/include/linux/close_range.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/c++/11/bits/iterator_concepts.h:
@@ -854,3 +838,7 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: /home/fengyue/workspace/pans
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/features.h:
+
+/usr/include/limits.h:
+
+/usr/include/linux/limits.h:

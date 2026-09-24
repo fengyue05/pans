@@ -214,6 +214,20 @@ test_mutex/fast:
 	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mutex.dir/build.make tests/CMakeFiles/test_mutex.dir/build
 .PHONY : test_mutex/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_type_name.dir/rule:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_type_name.dir/rule
+.PHONY : tests/CMakeFiles/test_type_name.dir/rule
+
+# Convenience name for target.
+test_type_name: tests/CMakeFiles/test_type_name.dir/rule
+.PHONY : test_type_name
+
+# fast build rule for target.
+test_type_name/fast:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_type_name.dir/build.make tests/CMakeFiles/test_type_name.dir/build
+.PHONY : test_type_name/fast
+
 test_lock.o: test_lock.cpp.o
 .PHONY : test_lock.o
 
@@ -286,6 +300,30 @@ test_mutex.cpp.s:
 	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mutex.dir/build.make tests/CMakeFiles/test_mutex.dir/test_mutex.cpp.s
 .PHONY : test_mutex.cpp.s
 
+test_type_name.o: test_type_name.cpp.o
+.PHONY : test_type_name.o
+
+# target to build an object file
+test_type_name.cpp.o:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_type_name.dir/build.make tests/CMakeFiles/test_type_name.dir/test_type_name.cpp.o
+.PHONY : test_type_name.cpp.o
+
+test_type_name.i: test_type_name.cpp.i
+.PHONY : test_type_name.i
+
+# target to preprocess a source file
+test_type_name.cpp.i:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_type_name.dir/build.make tests/CMakeFiles/test_type_name.dir/test_type_name.cpp.i
+.PHONY : test_type_name.cpp.i
+
+test_type_name.s: test_type_name.cpp.s
+.PHONY : test_type_name.s
+
+# target to generate assembly for a file
+test_type_name.cpp.s:
+	cd /home/fengyue/workspace/pans/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_type_name.dir/build.make tests/CMakeFiles/test_type_name.dir/test_type_name.cpp.s
+.PHONY : test_type_name.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -302,6 +340,7 @@ help:
 	@echo "... test_lock"
 	@echo "... test_logger"
 	@echo "... test_mutex"
+	@echo "... test_type_name"
 	@echo "... test_lock.o"
 	@echo "... test_lock.i"
 	@echo "... test_lock.s"
@@ -311,6 +350,9 @@ help:
 	@echo "... test_mutex.o"
 	@echo "... test_mutex.i"
 	@echo "... test_mutex.s"
+	@echo "... test_type_name.o"
+	@echo "... test_type_name.i"
+	@echo "... test_type_name.s"
 .PHONY : help
 
 

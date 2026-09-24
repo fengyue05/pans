@@ -77,5 +77,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/test_lock.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_logger.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_mutex.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_type_name.dir/DependInfo.cmake"
   "tests/inner_tests/CMakeFiles/test_log_buffer.dir/DependInfo.cmake"
   )

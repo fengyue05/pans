@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/test_type_name.dir/test_type_name.cpp.o -o /home/fengyue/workspace/pans/bin/tests/test_type_name  ../pans/libpans.a /usr/lib/x86_64-linux-gnu/libdw.so

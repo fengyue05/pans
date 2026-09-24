@@ -55,6 +55,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "/home/fengyue/workspace/pans/pans/include/pans/export.h"
     "/home/fengyue/workspace/pans/pans/include/pans/macros.h"
     "/home/fengyue/workspace/pans/pans/include/pans/mutex.h"
+    "/home/fengyue/workspace/pans/pans/include/pans/type_name.h"
     "/home/fengyue/workspace/pans/pans/include/pans/types.h"
     "/home/fengyue/workspace/pans/pans/include/pans/utils/string_utils.h"
     "/home/fengyue/workspace/pans/pans/include/pans/utils/system_utils.h"

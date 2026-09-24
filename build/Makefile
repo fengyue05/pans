@@ -225,6 +225,19 @@ test_mutex/fast:
 .PHONY : test_mutex/fast
 
 #=============================================================================
+# Target rules for targets named test_type_name
+
+# Build rule for target.
+test_type_name: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_type_name
+.PHONY : test_type_name
+
+# fast build rule for target.
+test_type_name/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_type_name.dir/build.make tests/CMakeFiles/test_type_name.dir/build
+.PHONY : test_type_name/fast
+
+#=============================================================================
 # Target rules for targets named test_log_buffer
 
 # Build rule for target.
@@ -255,6 +268,7 @@ help:
 	@echo "... test_log_buffer"
 	@echo "... test_logger"
 	@echo "... test_mutex"
+	@echo "... test_type_name"
 .PHONY : help
 
 

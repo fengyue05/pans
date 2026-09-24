@@ -16,6 +16,7 @@ set(OLD_GLOB
   "/home/fengyue/workspace/pans/tests/test_lock.cpp"
   "/home/fengyue/workspace/pans/tests/test_logger.cpp"
   "/home/fengyue/workspace/pans/tests/test_mutex.cpp"
+  "/home/fengyue/workspace/pans/tests/test_type_name.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -76,6 +77,7 @@ set(OLD_GLOB
   "/home/fengyue/workspace/pans/pans/include/pans/export.h"
   "/home/fengyue/workspace/pans/pans/include/pans/macros.h"
   "/home/fengyue/workspace/pans/pans/include/pans/mutex.h"
+  "/home/fengyue/workspace/pans/pans/include/pans/type_name.h"
   "/home/fengyue/workspace/pans/pans/include/pans/types.h"
   "/home/fengyue/workspace/pans/pans/include/pans/utils/string_utils.h"
   "/home/fengyue/workspace/pans/pans/include/pans/utils/system_utils.h"
