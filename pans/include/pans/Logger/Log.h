@@ -3,8 +3,6 @@
 
 #include <pans/Logger/Log_level.h>
 #include <pans/Logger/Logger.h>
-#include <pans/macros.h>
-
 #include <cstddef>
 #include <iosfwd>
 #include <string_view>

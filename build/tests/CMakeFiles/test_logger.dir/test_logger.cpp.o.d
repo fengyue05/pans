@@ -222,7 +222,4 @@ tests/CMakeFiles/test_logger.dir/test_logger.cpp.o: \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
  /home/fengyue/workspace/pans/pans/include/pans/Logger/appender.h \
- /home/fengyue/workspace/pans/pans/include/pans/macros.h \
- /usr/include/c++/11/cassert /usr/include/assert.h \
- /home/fengyue/workspace/pans/pans/include/pans/utils/system_utils.h \
  /usr/include/c++/11/cstddef
