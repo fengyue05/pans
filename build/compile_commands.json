@@ -1,73 +1,73 @@
 [
 {
   "directory": "/home/fengyue/workspace/pans/build/pans",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger/LogLine.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/LogLine.cc",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/pans.dir/src/Logger/LogLine.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/LogLine.cc",
   "file": "/home/fengyue/workspace/pans/pans/src/Logger/LogLine.cc",
   "output": "pans/CMakeFiles/pans.dir/src/Logger/LogLine.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/pans",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger/Log_level.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/Log_level.cc",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/pans.dir/src/Logger/Log_level.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/Log_level.cc",
   "file": "/home/fengyue/workspace/pans/pans/src/Logger/Log_level.cc",
   "output": "pans/CMakeFiles/pans.dir/src/Logger/Log_level.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/pans",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger/Logger.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/Logger.cc",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/pans.dir/src/Logger/Logger.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/Logger.cc",
   "file": "/home/fengyue/workspace/pans/pans/src/Logger/Logger.cc",
   "output": "pans/CMakeFiles/pans.dir/src/Logger/Logger.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/pans",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger/apender.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/apender.cc",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/pans.dir/src/Logger/apender.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/apender.cc",
   "file": "/home/fengyue/workspace/pans/pans/src/Logger/apender.cc",
   "output": "pans/CMakeFiles/pans.dir/src/Logger/apender.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/pans",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/Logger/formatter.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/formatter.cc",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/pans.dir/src/Logger/formatter.cc.o -c /home/fengyue/workspace/pans/pans/src/Logger/formatter.cc",
   "file": "/home/fengyue/workspace/pans/pans/src/Logger/formatter.cc",
   "output": "pans/CMakeFiles/pans.dir/src/Logger/formatter.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/pans",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/utils/string_utils.cc.o -c /home/fengyue/workspace/pans/pans/src/utils/string_utils.cc",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/pans.dir/src/utils/string_utils.cc.o -c /home/fengyue/workspace/pans/pans/src/utils/string_utils.cc",
   "file": "/home/fengyue/workspace/pans/pans/src/utils/string_utils.cc",
   "output": "pans/CMakeFiles/pans.dir/src/utils/string_utils.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/pans",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/utils/system_utils.cc.o -c /home/fengyue/workspace/pans/pans/src/utils/system_utils.cc",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/pans.dir/src/utils/system_utils.cc.o -c /home/fengyue/workspace/pans/pans/src/utils/system_utils.cc",
   "file": "/home/fengyue/workspace/pans/pans/src/utils/system_utils.cc",
   "output": "pans/CMakeFiles/pans.dir/src/utils/system_utils.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/pans",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -o CMakeFiles/pans.dir/src/utils/thread_utils.cc.o -c /home/fengyue/workspace/pans/pans/src/utils/thread_utils.cc",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Werror -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/pans.dir/src/utils/thread_utils.cc.o -c /home/fengyue/workspace/pans/pans/src/utils/thread_utils.cc",
   "file": "/home/fengyue/workspace/pans/pans/src/utils/thread_utils.cc",
   "output": "pans/CMakeFiles/pans.dir/src/utils/thread_utils.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/tests",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -o CMakeFiles/test_lock.dir/test_lock.cpp.o -c /home/fengyue/workspace/pans/tests/test_lock.cpp",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/test_lock.dir/test_lock.cpp.o -c /home/fengyue/workspace/pans/tests/test_lock.cpp",
   "file": "/home/fengyue/workspace/pans/tests/test_lock.cpp",
   "output": "tests/CMakeFiles/test_lock.dir/test_lock.cpp.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/tests",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -o CMakeFiles/test_logger.dir/test_logger.cpp.o -c /home/fengyue/workspace/pans/tests/test_logger.cpp",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/test_logger.dir/test_logger.cpp.o -c /home/fengyue/workspace/pans/tests/test_logger.cpp",
   "file": "/home/fengyue/workspace/pans/tests/test_logger.cpp",
   "output": "tests/CMakeFiles/test_logger.dir/test_logger.cpp.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/tests",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -o CMakeFiles/test_mutex.dir/test_mutex.cpp.o -c /home/fengyue/workspace/pans/tests/test_mutex.cpp",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/test_mutex.dir/test_mutex.cpp.o -c /home/fengyue/workspace/pans/tests/test_mutex.cpp",
   "file": "/home/fengyue/workspace/pans/tests/test_mutex.cpp",
   "output": "tests/CMakeFiles/test_mutex.dir/test_mutex.cpp.o"
 },
 {
   "directory": "/home/fengyue/workspace/pans/build/tests/inner_tests",
-  "command": "/usr/bin/g++  -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -o CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o -c /home/fengyue/workspace/pans/tests/inner_tests/test_log_buffer.cpp",
+  "command": "/usr/bin/g++ -DPANS_DEBUG -I/home/fengyue/workspace/pans/pans/src -I/home/fengyue/workspace/pans/pans/include -g -std=gnu++20 -Wall -Wextra -Wpedantic -fno-strict-aliasing -Wno-builtin-macro-redefined -fPIC -O0 -g3 -ggdb -o CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o -c /home/fengyue/workspace/pans/tests/inner_tests/test_log_buffer.cpp",
   "file": "/home/fengyue/workspace/pans/tests/inner_tests/test_log_buffer.cpp",
   "output": "tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o"
 }

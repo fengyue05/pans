@@ -23,6 +23,11 @@ target_include_directories(pans
 
 target_link_libraries(pans ${PANS_USAGE_SCOPE} pans_options) # 继承所有编译/链接选项
 
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    find_library(PANS_DW_LIBRARY NAMES dw REQUIRED)
+    target_link_libraries(pans ${PANS_USAGE_SCOPE} ${PANS_DW_LIBRARY})
+endif()
+
 install(TARGETS pans
     EXPORT pansTargets
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}

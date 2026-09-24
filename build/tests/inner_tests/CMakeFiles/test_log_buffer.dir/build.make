@@ -96,6 +96,7 @@ test_log_buffer_EXTERNAL_OBJECTS =
 /home/fengyue/workspace/pans/bin/tests/test_log_buffer: tests/inner_tests/CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o
 /home/fengyue/workspace/pans/bin/tests/test_log_buffer: tests/inner_tests/CMakeFiles/test_log_buffer.dir/build.make
 /home/fengyue/workspace/pans/bin/tests/test_log_buffer: pans/libpans.a
+/home/fengyue/workspace/pans/bin/tests/test_log_buffer: /usr/lib/x86_64-linux-gnu/libdw.so
 /home/fengyue/workspace/pans/bin/tests/test_log_buffer: tests/inner_tests/CMakeFiles/test_log_buffer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/fengyue/workspace/pans/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/fengyue/workspace/pans/bin/tests/test_log_buffer"
 	cd /home/fengyue/workspace/pans/build/tests/inner_tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_log_buffer.dir/link.txt --verbose=$(VERBOSE)

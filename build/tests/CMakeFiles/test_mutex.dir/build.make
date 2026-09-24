@@ -96,6 +96,7 @@ test_mutex_EXTERNAL_OBJECTS =
 /home/fengyue/workspace/pans/bin/tests/test_mutex: tests/CMakeFiles/test_mutex.dir/test_mutex.cpp.o
 /home/fengyue/workspace/pans/bin/tests/test_mutex: tests/CMakeFiles/test_mutex.dir/build.make
 /home/fengyue/workspace/pans/bin/tests/test_mutex: pans/libpans.a
+/home/fengyue/workspace/pans/bin/tests/test_mutex: /usr/lib/x86_64-linux-gnu/libdw.so
 /home/fengyue/workspace/pans/bin/tests/test_mutex: tests/CMakeFiles/test_mutex.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/fengyue/workspace/pans/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/fengyue/workspace/pans/bin/tests/test_mutex"
 	cd /home/fengyue/workspace/pans/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_mutex.dir/link.txt --verbose=$(VERBOSE)

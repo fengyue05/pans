@@ -76,6 +76,7 @@ set(OLD_GLOB
   "/home/fengyue/workspace/pans/pans/include/pans/export.h"
   "/home/fengyue/workspace/pans/pans/include/pans/macros.h"
   "/home/fengyue/workspace/pans/pans/include/pans/mutex.h"
+  "/home/fengyue/workspace/pans/pans/include/pans/types.h"
   "/home/fengyue/workspace/pans/pans/include/pans/utils/string_utils.h"
   "/home/fengyue/workspace/pans/pans/include/pans/utils/system_utils.h"
   "/home/fengyue/workspace/pans/pans/include/pans/utils/thread_utils.h"

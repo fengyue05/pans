@@ -280,6 +280,9 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Enable code coverage instrumentation
+ENABLE_COVERAGE:BOOL=OFF
+
 //Build examples
 PANS_BUILD_EXAMPLES:BOOL=ON
 
@@ -288,6 +291,9 @@ PANS_BUILD_TESTS:BOOL=ON
 
 //Build tools
 PANS_BUILD_TOOLS:BOOL=OFF
+
+//Path to a library.
+PANS_DW_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libdw.so
 
 //Value Computed by CMake
 pans_BINARY_DIR:STATIC=/home/fengyue/workspace/pans/build

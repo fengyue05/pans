@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o -o /home/fengyue/workspace/pans/bin/tests/test_log_buffer  ../../pans/libpans.a
+/usr/bin/g++ -g -rdynamic CMakeFiles/test_log_buffer.dir/test_log_buffer.cpp.o -o /home/fengyue/workspace/pans/bin/tests/test_log_buffer  ../../pans/libpans.a /usr/lib/x86_64-linux-gnu/libdw.so

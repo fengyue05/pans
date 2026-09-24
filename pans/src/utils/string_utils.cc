@@ -1,4 +1,4 @@
-#include <cstdint>
+#include <pans/types.h>
 #include <cstdio>
 
 #include <pans/utils/string_utils.h>
